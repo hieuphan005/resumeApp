@@ -35,8 +35,7 @@
 		<table class="table">
 			<thead>
 				<tr>
-					<th>Language</th>
-					<th>Experience</th>
+					<th>Skills</th>
 				</tr>
 
 			</thead>
@@ -44,8 +43,7 @@
 
 				<tr
 					ng-repeat="item in resume | filter: { type: 'skill' }">
-					<td>{{item.language}}</td>
-					<td>{{item.experience}}</td>
+					<td>{{item.skill}}</td>
 				</tr>
 			</tbody>
 			</table>
@@ -62,7 +60,7 @@
 				<tbody>
 					<tr
 						ng-repeat="item in resume | filter: { type: 'project' }">
-						<td>{{item.title}}</td>
+						<td>{{item.project}}</td>
 						<td>{{item.description}}</td>
 					</tr>
 				</tbody>
